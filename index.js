@@ -6,7 +6,7 @@ if(req.url === '/'){
     res.setHeader('Content-Type','application/json')
     res.end(JSON.stringify({message:'welcome to cerverapi'}))
 }else if(req.url === '/getProduct'){
-     getProduct(req,res)
+     getProduct(res)
 
 }else{
     res.setHeader('Content-Type','application/json')
